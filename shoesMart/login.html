@@ -18,6 +18,42 @@
   <link href="css/tiny-slider.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
+  <style>
+   
+    .login-container {
+      /* padding-right: 700px;
+      padding-left:  700px; */
+
+      /* padding: 70px 400px 70px 400px; */
+      position: relative;
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5cb85c;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+    }
+    .login-container button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +70,7 @@
 
       <div class="collapse navbar-collapse" id="navbarsFurni">
         <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li><a class="nav-link" href="shop.html">Shop</a></li>
@@ -75,30 +111,14 @@
   </div>
   <!-- End Hero Section -->
 
-  <!-- Start Product Section -->
-  <div class="product-section d-flex flex-wrap">
-    <!-- <div class="container"> -->
-    <div class="row">
-      <!-- Start Column 2 -->
-      <!-- <div class="product col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-          <a class="product-item" href="cart.html">
-            <img src="images/sh01.png" class="img-fluid product-thumbnail">
-            <h3 class="product-title">shoes01</h3>
-            <strong class="product-price">$50.00</strong>
-            
-            <span class="icon-cross">
-              <img src="images/cross.svg" class="img-fluid">
-            </span>
-          </a>
-
-        </div> -->
-      <!-- End Column 2 -->
-
-    </div>
-    <!-- </div> -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form method="post" name="loginFrm">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button id="loginBtn" type="submit" style="background-color: rgb(190, 149, 71);">Login</button>
+    </form>
   </div>
-
-  <!-- End Product Section -->
 
   <!-- Start Why Choose Us Section -->
   <div class="why-choose-section">
@@ -148,7 +168,7 @@
                 <h3>Hassle Free Returns</h3>
                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
               </div>
-            </div>
+            </div>ㅔ
 
           </div>
         </div>
@@ -276,6 +296,7 @@
   <script src="js/custom.js"></script>
   <script src="js/products.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/login.js"></script>
 
   <script>
     localStorage.setItem('productDatas', JSON.stringify(productDatas));

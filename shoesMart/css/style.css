@@ -297,7 +297,8 @@ a.more {
 }
 
 .product-section {
-  padding: 7rem 0;
+  padding: 3rem 0;
+  
 }
 
 .product-section .product-item {
@@ -307,6 +308,7 @@ a.more {
   position: relative;
   padding-bottom: 50px;
   cursor: pointer;
+  /* margin: 5px; */
 }
 
 .product-section .product-item .product-thumbnail {
