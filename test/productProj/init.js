@@ -21,8 +21,8 @@ const productData = [
 ]
 const memberData = [
   {id: 'user01', pw: 1111, name: '홍길동', responsibility: 'User'}
- ,{id: 'user02', pw: 1111, name: '김민서', responsibility: 'User'}
- ,{id: 'user03', pw: 1111, name: '황주연', responsibility: 'Admin'}
+ ,{id: 'user02', pw: 2222, name: '김민서', responsibility: 'User'}
+ ,{id: 'user03', pw: 3333, name: '황주연', responsibility: 'Admin'}
 ]
 const cartData = [
   {id:'user01', product: 'P001', qty: 3}

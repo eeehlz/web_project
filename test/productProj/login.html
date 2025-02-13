@@ -20,9 +20,9 @@
     document.forms.loginFrm.addEventListener('submit', function (e) {
       e.preventDefault();
       let id = document.querySelector('input[name="user_id"]').value;
-      let pw = document.querySelector('input[name="user_pw"]').value; 
+      let pw = document.querySelector('input[name="user_pw"]').value;
       // members의 저장값. 읽어오기
-      let members = JSON.parse(localStorage.getItem('members'));
+      let members = JSON.parse(localStorage.getItem('memberData'));
       console.log(members);
 
       for (let i = 0; i < members.length; i++) {
@@ -38,4 +38,3 @@
 </body>
 
 </html>
-

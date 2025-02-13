@@ -19,7 +19,6 @@
   <link href="css/style.css" rel="stylesheet">
 
   <style>
-   
     .login-container {
       /* padding-right: 700px;
       padding-left:  700px; */
@@ -31,9 +30,11 @@
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
     .login-container h2 {
       margin-bottom: 20px;
     }
+
     .login-container input {
       width: 100%;
       padding: 10px;
@@ -41,6 +42,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     .login-container button {
       width: 100%;
       padding: 10px;
@@ -50,6 +52,7 @@
       color: #fff;
       font-size: 16px;
     }
+
     .login-container button:hover {
       background-color: #4cae4c;
     }
@@ -97,8 +100,7 @@
             <h1>Shopping <span clsas="d-block">Your shoes</span></h1>
             <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
               velit imperdiet dolor tempor tristique.</p>
-            <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#"
-                class="btn btn-white-outline">Explore</a></p>
+            <p><a href="shop.html" class="btn btn-secondary me-2">Shop Now</a>
           </div>
         </div>
         <div class="col-lg-7">
@@ -111,6 +113,7 @@
   </div>
   <!-- End Hero Section -->
 
+  <!--login section start-->
   <div class="login-container">
     <h2>Login</h2>
     <form method="post" name="loginFrm">
@@ -119,6 +122,7 @@
       <button id="loginBtn" type="submit" style="background-color: rgb(190, 149, 71);">Login</button>
     </form>
   </div>
+  <!--login section end-->
 
   <!-- Start Why Choose Us Section -->
   <div class="why-choose-section">
@@ -219,10 +223,10 @@
             Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
 
           <ul class="list-unstyled custom-social">
-            <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-            <li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+            <li><a href="http://www.facebook.com"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+            <li><a href="http://www.X.com"><span class="fa fa-brands fa-twitter"></span></a></li>
+            <li><a href="http://www.instagram.com"><span class="fa fa-brands fa-instagram"></span></a></li>
+            <li><a href="http://www.linkedin.com"><span class="fa fa-brands fa-linkedin"></span></a></li>
           </ul>
         </div>
 
@@ -290,16 +294,16 @@
     </div>
   </footer>
   <!-- End Footer Section -->
-  
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/tiny-slider.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/products.js"></script>
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
 
   <script>
     localStorage.setItem('productDatas', JSON.stringify(productDatas));
+    localStorage.setItem('memberDatas', JSON.stringify(memberDatas));
   </script>
 </body>
 
